@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.time.Duration;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -33,6 +34,7 @@ public class TestBase {
 	public static Properties config = new Properties();
 	public static Properties OR  = new Properties();
 	public static FileInputStream fis;
+	public static Logger log = Logger.getLogger("TestBase.java");
 	
 	@BeforeSuite
 	public void setUp() throws FileNotFoundException {
@@ -42,6 +44,7 @@ public class TestBase {
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Config.properties");
 			try {
 				config.load(fis);
+				log.debug("Config file loaded");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -64,6 +67,7 @@ public class TestBase {
 				
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();
+				log.debug("Chrome launched");
 				
 			}else if(config.getProperty("browser").equals("edge")) {
 				
@@ -72,6 +76,7 @@ public class TestBase {
 			}
 			
 			driver.get(config.getProperty("testsiteurl"));
+			log.debug("Navigated to: "+config.getProperty("testsiteurl"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 			
@@ -83,5 +88,6 @@ public class TestBase {
 	public void tearDown() {
 		
 		driver.quit();
+		log.debug("Test execution completed");
 	}
 }

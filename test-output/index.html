@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-DataDrivenBasics" class="navigator-link">
-              <span class="suite-name border-passed">DataDrivenBasics</span>
+              <span class="suite-name border-failed">DataDrivenBasics</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-DataDrivenBasics" class="hide-methods passed suite-DataDrivenBasics"> (hide)</a> <!-- hide-methods passed suite-DataDrivenBasics -->
-                      <a href="#" panel-name="suite-DataDrivenBasics" class="show-methods passed suite-DataDrivenBasics"> (show)</a> <!-- show-methods passed suite-DataDrivenBasics -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DataDrivenBasics" class="hide-methods failed suite-DataDrivenBasics"> (hide)</a> <!-- hide-methods failed suite-DataDrivenBasics -->
+                      <a href="#" panel-name="suite-DataDrivenBasics" class="show-methods failed suite-DataDrivenBasics"> (show)</a> <!-- show-methods failed suite-DataDrivenBasics -->
                     </span>
-                    <div class="method-list-content passed suite-DataDrivenBasics">
+                    <div class="method-list-content failed suite-DataDrivenBasics">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-DataDrivenBasics" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginAsBankManager">loginAsBankManager</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-DataDrivenBasics -->
+                    </div> <!-- method-list-content failed suite-DataDrivenBasics -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DataDrivenBasics" class="panel DataDrivenBasics">
-          <div class="suite-DataDrivenBasics-class-passed">
+          <div class="suite-DataDrivenBasics-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,10 +130,33 @@
                   <a name="loginAsBankManager">
                   </a> <!-- loginAsBankManager -->
                   <span class="method-name">loginAsBankManager</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;body &gt; div.ng-scope &gt; div &gt; div.ng-scope &gt; div &gt; div.borderM.box.padT20 &gt; div:nth-child(3) &gt; button&quot;}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KUROSAKIICHIGO&apos;, ip: &apos;192.168.57.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Heyma\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d339f83ee52effcdd36100c1c0711f8d
+*** Element info: {Using=css selector, value=body &gt; div.ng-scope &gt; div &gt; div.ng-scope &gt; div &gt; div.borderM.box.padT20 &gt; div:nth-child(3) &gt; button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testcases.LoginTest.loginAsBankManager(LoginTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DataDrivenBasics-class-passed -->
+          </div> <!-- suite-DataDrivenBasics-class-failed -->
         </div> <!-- panel DataDrivenBasics -->
         <div panel-name="test-xml-DataDrivenBasics" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -190,12 +213,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAsBankManager')
 data.setCell(0, 2, 'testcases.LoginTest')
-data.setCell(0, 3, 3080);
+data.setCell(0, 3, 31);
 window.suiteTableData['DataDrivenBasics']= { tableData: data, tableDiv: 'times-div-DataDrivenBasics'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 31 ms</span>
               <div id="times-div-DataDrivenBasics">
               </div> <!-- times-div-DataDrivenBasics -->
             </div> <!-- times-div -->
@@ -227,12 +250,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginAsBankManager</span>
-                <span class="method-start">4390 ms</span>
+                <span class="method-start">2243 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7509 ms</span>
+                <span class="method-start">2307 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
