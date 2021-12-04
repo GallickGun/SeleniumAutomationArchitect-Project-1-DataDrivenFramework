@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-DataDrivenBasics" class="navigator-link">
-              <span class="suite-name border-failed">DataDrivenBasics</span>
+              <span class="suite-name border-passed">DataDrivenBasics</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-DataDrivenBasics" class="hide-methods failed suite-DataDrivenBasics"> (hide)</a> <!-- hide-methods failed suite-DataDrivenBasics -->
-                      <a href="#" panel-name="suite-DataDrivenBasics" class="show-methods failed suite-DataDrivenBasics"> (show)</a> <!-- show-methods failed suite-DataDrivenBasics -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DataDrivenBasics" class="hide-methods passed suite-DataDrivenBasics"> (hide)</a> <!-- hide-methods passed suite-DataDrivenBasics -->
+                      <a href="#" panel-name="suite-DataDrivenBasics" class="show-methods passed suite-DataDrivenBasics"> (show)</a> <!-- show-methods passed suite-DataDrivenBasics -->
                     </span>
-                    <div class="method-list-content failed suite-DataDrivenBasics">
+                    <div class="method-list-content passed suite-DataDrivenBasics">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DataDrivenBasics" title="testcases.LoginTest" class="method navigator-link" hash-for-method="loginAsBankManager">loginAsBankManager</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DataDrivenBasics" title="testcases.AddCustomerTest" class="method navigator-link" hash-for-method="AddCustomer(Harry, Potter, HG314, Customer added successfully)">AddCustomer(Harry, Potter, HG314, Customer added successfully)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-DataDrivenBasics -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DataDrivenBasics" title="testcases.BankManagerLoginTest" class="method navigator-link" hash-for-method="loginAsBankManager">loginAsBankManager</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DataDrivenBasics -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,10 +124,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DataDrivenBasics" class="panel DataDrivenBasics">
-          <div class="suite-DataDrivenBasics-class-failed">
+          <div class="suite-DataDrivenBasics-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.LoginTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCustomer(Harry, Potter, HG314, Customer added successfully)">
+                  </a> <!-- AddCustomer(Harry, Potter, HG314, Customer added successfully) -->
+                  <span class="method-name">AddCustomer</span>
+                  <span class="parameters">(Harry, Potter, HG314, Customer added successfully)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DataDrivenBasics-class-passed -->
+          <div class="suite-DataDrivenBasics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.BankManagerLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -130,15 +151,10 @@
                   <a name="loginAsBankManager">
                   </a> <!-- loginAsBankManager -->
                   <span class="method-name">loginAsBankManager</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login was not successful expected [true] but found [false]
-	at testcases.LoginTest.loginAsBankManager(LoginTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DataDrivenBasics-class-failed -->
+          </div> <!-- suite-DataDrivenBasics-class-passed -->
         </div> <!-- panel DataDrivenBasics -->
         <div panel-name="test-xml-DataDrivenBasics" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -149,11 +165,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;DataDrivenBasics&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.BankManagerLoginTest&quot;/&gt;
+      &lt;class name=&quot;testcases.AddCustomerTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- DataDrivenBasics --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +182,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginTest (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,16 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAsBankManager')
-data.setCell(0, 2, 'testcases.LoginTest')
-data.setCell(0, 3, 19341);
+data.setCell(0, 2, 'testcases.BankManagerLoginTest')
+data.setCell(0, 3, 2074);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddCustomer')
+data.setCell(1, 2, 'testcases.AddCustomerTest')
+data.setCell(1, 3, 418);
 window.suiteTableData['DataDrivenBasics']= { tableData: data, tableDiv: 'times-div-DataDrivenBasics'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-DataDrivenBasics">
               </div> <!-- times-div-DataDrivenBasics -->
             </div> <!-- times-div -->
@@ -215,9 +236,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-DataDrivenBasics" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.AddCustomerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-DataDrivenBasics" class="panel">
@@ -226,20 +256,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.BankManagerLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginAsBankManager</span>
-                <span class="method-start">4308 ms</span>
+                <span class="method-start">4999 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AddCustomer(Harry, Potter, HG314, Customer added successfully)</span>
+                <span class="method-start">7085 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.BankManagerLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23679 ms</span>
+                <span class="method-start">7530 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import utilities.ExcelReader;
+
 
 public class TestBase {
 	
@@ -29,6 +31,7 @@ public class TestBase {
 	 * Initialize DB
 	 * Initialize Excel
 	 * Initialize Mail
+	 * Initialize Jenkins
 	 */
 
 	
@@ -37,6 +40,8 @@ public class TestBase {
 	public static Properties OR  = new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("TestBase.java");
+	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testData.xlsx");
+	public static WebDriverWait wait;
 	
 	@BeforeSuite
 	public void setUp() throws FileNotFoundException {
@@ -81,7 +86,6 @@ public class TestBase {
 			log.debug("Navigated to: "+config.getProperty("testsiteurl"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-			
 		}
 		
 	}
