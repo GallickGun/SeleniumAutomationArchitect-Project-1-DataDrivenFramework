@@ -2,54 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-03T02:03:42 WIB" name="DataDrivenBasics" finished-at="2021-12-03T02:03:42 WIB" duration-ms="59">
+  <suite started-at="2021-12-04T12:56:08 WIB" name="DataDrivenBasics" finished-at="2021-12-04T12:56:28 WIB" duration-ms="19375">
     <groups>
     </groups>
-    <test started-at="2021-12-03T02:03:42 WIB" name="LoginTest" finished-at="2021-12-03T02:03:42 WIB" duration-ms="59">
+    <test started-at="2021-12-04T12:56:08 WIB" name="LoginTest" finished-at="2021-12-04T12:56:28 WIB" duration-ms="19375">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@557caf28]" started-at="2021-12-03T02:03:40 WIB" name="setUp" finished-at="2021-12-03T02:03:42 WIB" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@77f1baf5]" started-at="2021-12-04T12:56:04 WIB" name="setUp" finished-at="2021-12-04T12:56:08 WIB" duration-ms="4282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginAsBankManager()[pri:0, instance:testcases.LoginTest@557caf28]" started-at="2021-12-03T02:03:42 WIB" name="loginAsBankManager" finished-at="2021-12-03T02:03:42 WIB" duration-ms="31" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="loginAsBankManager()[pri:0, instance:testcases.LoginTest@77f1baf5]" started-at="2021-12-04T12:56:08 WIB" name="loginAsBankManager" finished-at="2021-12-04T12:56:28 WIB" duration-ms="19341" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KUROSAKIICHIGO', ip: '192.168.57.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Heyma\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d339f83ee52effcdd36100c1c0711f8d
-*** Element info: {Using=css selector, value=body > div.ng-scope > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button}]]>
+              <![CDATA[Login was not successful expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body > div.ng-scope > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KUROSAKIICHIGO', ip: '192.168.57.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Heyma\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d339f83ee52effcdd36100c1c0711f8d
-*** Element info: {Using=css selector, value=body > div.ng-scope > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at testcases.LoginTest.loginAsBankManager(LoginTest.java:16)
+              <![CDATA[java.lang.AssertionError: Login was not successful expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.loginAsBankManager(LoginTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,11 +52,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@557caf28]" started-at="2021-12-03T02:03:42 WIB" name="tearDown" finished-at="2021-12-03T02:03:43 WIB" duration-ms="633" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@77f1baf5]" started-at="2021-12-04T12:56:28 WIB" name="tearDown" finished-at="2021-12-04T12:56:28 WIB" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

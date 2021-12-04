@@ -9,31 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">DataDrivenBasics</th></tr>
-<tr><td><a href="#t0">LoginTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">59</td><td></td><td></td></tr>
+<tr><td><a href="#t0">LoginTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,375</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DataDrivenBasics</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.LoginTest</td><td><a href="#m0">loginAsBankManager</a></td><td rowspan="1">1638471822437</td><td rowspan="1">31</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DataDrivenBasics</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.LoginTest</td><td><a href="#m0">loginAsBankManager</a></td><td rowspan="1">1638597368780</td><td rowspan="1">19341</td></tr></tbody>
 </table>
-<h2>LoginTest</h2><h3 id="m0">testcases.LoginTest#loginAsBankManager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;body &gt; div.ng-scope &gt; div &gt; div.ng-scope &gt; div &gt; div.borderM.box.padT20 &gt; div:nth-child(3) &gt; button&quot;}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KUROSAKIICHIGO&apos;, ip: &apos;192.168.57.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Heyma\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d339f83ee52effcdd36100c1c0711f8d
-*** Element info: {Using=css selector, value=body &gt; div.ng-scope &gt; div &gt; div.ng-scope &gt; div &gt; div.borderM.box.padT20 &gt; div:nth-child(3) &gt; button}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testcases.LoginTest.loginAsBankManager(LoginTest.java:16)
+<h2>LoginTest</h2><h3 id="m0">testcases.LoginTest#loginAsBankManager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login was not successful expected [true] but found [false]
+	at testcases.LoginTest.loginAsBankManager(LoginTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -7,6 +7,8 @@ import java.util.Properties;
 import java.time.Duration;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -82,6 +84,18 @@ public class TestBase {
 			
 		}
 		
+	}
+	
+	public boolean isElementPresent(By by) {
+		
+		try {
+			
+			driver.findElement(by);
+			return true;
+		} catch (NoSuchElementException e) {
+			// TODO: handle exception
+			return false;
+		}
 	}
 	
 	@AfterSuite

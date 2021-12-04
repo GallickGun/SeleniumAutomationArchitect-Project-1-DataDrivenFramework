@@ -3,6 +3,7 @@ package testcases;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestBase;
@@ -14,7 +15,7 @@ public class LoginTest extends TestBase {
 		
 		log.debug("Inside loginTest");
 		driver.findElement(By.cssSelector(OR.getProperty("btn_BankManagerLogin"))).click();
-		Thread.sleep(3000);
+		Assert.assertTrue(isElementPresent(By.cssSelector(OR.getProperty("btn_AddCustomer"))), "Login was not successful");
 		log.debug("Login was successful");
 	}
 }
