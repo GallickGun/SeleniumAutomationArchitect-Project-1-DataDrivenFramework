@@ -1,12 +1,12 @@
-05/12/2021 18:21:15 TestBase.java Config file loaded
-05/12/2021 18:21:18 TestBase.java Chrome launched
-05/12/2021 18:21:19 TestBase.java Navigated to: https://www.way2automation.com/angularjs-protractor/banking/#/login
-05/12/2021 18:21:20 TestBase.java Inside BankManagerLoginTest
-05/12/2021 18:21:20 TestBase.java Login was successful
-05/12/2021 18:21:20 TestBase.java Inside AddCustomerTest
-05/12/2021 18:21:20 TestBase.java First Name filled
-05/12/2021 18:21:20 TestBase.java Last Name filled
-05/12/2021 18:21:20 TestBase.java Post Code filled
-05/12/2021 18:21:20 TestBase.java New Customer added
-05/12/2021 18:21:20 TestBase.java Alert accepted
-05/12/2021 18:21:21 TestBase.java Test execution completed
+05/12/2021 20:15:12 TestBase.java Config file loaded
+05/12/2021 20:15:16 TestBase.java Chrome launched
+05/12/2021 20:15:17 TestBase.java Navigated to: https://www.way2automation.com/angularjs-protractor/banking/#/login
+05/12/2021 20:15:18 TestBase.java Inside BankManagerLoginTest
+05/12/2021 20:15:18 TestBase.java Login was successful
+05/12/2021 20:15:18 TestBase.java Inside AddCustomerTest
+05/12/2021 20:15:18 TestBase.java First Name filled
+05/12/2021 20:15:18 TestBase.java Last Name filled
+05/12/2021 20:15:18 TestBase.java Post Code filled
+05/12/2021 20:15:18 TestBase.java New Customer added
+05/12/2021 20:15:18 TestBase.java Alert accepted
+05/12/2021 20:15:19 TestBase.java Test execution completed
